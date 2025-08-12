@@ -1,1 +1,5 @@
 /home/runner/work/book-library-platform/book-library-platform/comment-service/src/main/java/com/example/commentservice/CommentServiceApplication.java
+/home/runner/work/book-library-platform/book-library-platform/comment-service/src/main/java/com/example/commentservice/controller/CommentController.java
+/home/runner/work/book-library-platform/book-library-platform/comment-service/src/main/java/com/example/commentservice/entity/Comment.java
+/home/runner/work/book-library-platform/book-library-platform/comment-service/src/main/java/com/example/commentservice/repository/CommentRepository.java
+/home/runner/work/book-library-platform/book-library-platform/comment-service/src/main/java/com/example/commentservice/service/CommentService.java
