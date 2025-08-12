@@ -1,1 +1,5 @@
+com/example/commentservice/entity/Comment.class
 com/example/commentservice/CommentServiceApplication.class
+com/example/commentservice/service/CommentService.class
+com/example/commentservice/controller/CommentController.class
+com/example/commentservice/repository/CommentRepository.class

@@ -1,4 +1,7 @@
-# Maven
+# Compiled class files
+*.class
+
+# Maven target directories and files
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -10,19 +13,27 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# IDE
+# IntelliJ IDEA
 .idea/
+*.iws
 *.iml
 *.ipr
-*.iws
-.vscode/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 .eclipse/
 .metadata/
-.settings/
-.project
-.classpath
 
-# OS
+# VS Code
+.vscode/
+
+# OS Files
 .DS_Store
 .DS_Store?
 ._*
@@ -35,20 +46,33 @@ Thumbs.db
 *.log
 logs/
 
-# Database
-*.db
-*.sqlite
-*.h2.db
-
-# Application specific
-application-local.yml
-application-local.properties
-
 # Temporary files
 *.tmp
+*.temp
 *.swp
 *.swo
 *~
+
+# Application properties with sensitive data
+**/application-local.properties
+**/application-secret.properties
+application-local.yml
+
+# Database files
+*.db
+*.sqlite
+*.h2.db
+*.mv.db
+*.trace.db
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
 # Spring Boot
 spring-boot-starter-parent/

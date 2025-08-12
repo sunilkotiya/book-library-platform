@@ -1,4 +1,4 @@
-package com.example.bookservice.entity;
+package com.example.reviewservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,34 +7,30 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "books")
+@Table(name = "reviews")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Book {
+public class Review {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Column(nullable = false)
-    private String title;
+    @Column(name = "book_id", nullable = false)
+    private Long bookId;
+    
+    @Column(name = "user_id", nullable = false)
+    private Long userId;
     
     @Column(nullable = false)
-    private String author;
+    private Integer rating;
     
-    private String isbn;
+    @Column(length = 2000)
+    private String comment;
     
-    @Column(length = 1000)
-    private String description;
-    
-    @Column(name = "published_year")
-    private Integer publishedYear;
-    
-    private String genre;
-    
-    @Column(name = "page_count")
-    private Integer pageCount;
+    @Column(name = "reviewer_name")
+    private String reviewerName;
     
     @Column(name = "created_at")
     private LocalDateTime createdAt;
