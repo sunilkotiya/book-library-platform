@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
-    name: book-service
+    name: comment-service
 
   # Database configuration (example - adjust for your environment)
   datasource:
@@ -29,14 +29,14 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
-      group-id: book-service-group
+      group-id: comment-service-group
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 
 # Logging configuration
 logging:
   level:
-    com.example.bookservice: INFO
+    com.example.commentservice: INFO
     org.springframework.kafka: WARN
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

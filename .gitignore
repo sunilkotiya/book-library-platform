@@ -1,10 +1,17 @@
 # Compiled class files
 *.class
 
-# Maven target directories
+# Maven target directories and files
 target/
-!**/src/main/**/target/
-!**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
 # IntelliJ IDEA
 .idea/
@@ -20,12 +27,19 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.eclipse/
+.metadata/
 
 # VS Code
 .vscode/
 
 # OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
@@ -35,12 +49,18 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+*.swp
+*.swo
+*~
 
 # Application properties with sensitive data
 **/application-local.properties
 **/application-secret.properties
+application-local.yml
 
-# H2 Database files
+# Database files
+*.db
+*.sqlite
 *.h2.db
 *.mv.db
 *.trace.db
@@ -53,3 +73,13 @@ logs/
 *.zip
 *.tar.gz
 *.rar
+
+# Spring Boot
+spring-boot-starter-parent/
+
+# Docker
+.docker/
+
+# Coverage reports
+jacoco.exec
+coverage/
